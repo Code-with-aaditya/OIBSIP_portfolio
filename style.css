@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: white;
+  color: black;
+}
+
+.header_content {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo_text {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav_link {
+  display: none;
+  gap: 3rem;
+}
+
+.links {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+@media screen and (min-width: 980px) {
+  .nav_link {
+    display: flex;
+  }
+}
+.nav_link {
+  color: black;
+  font-size: 1.2rem;
+  transform: color 0.1s;
+}
+
+.links:hover {
+  color: gray;
+}
+
+.hamburger {
+  display: none;
+  border: none;
+  border-radius: 0.375rem;
+  background-color: white;
+}
+
+@media screen and (max-width: 980px) {
+  .hamburger {
+    display: block;
+  }
+}
+.menu_icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.menu_icon:hover {
+  cursor: pointer;
+}
+
+.first_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  gap: 10vw;
+}
+
+.right_section_title {
+  color: gray;
+}
+
+.right_section_title,
+.name {
+  text-align: center;
+  font-size: 1.5rem; /* Increase font size for better readability */
+  font-weight: bold;
+}
+
+#element {
+  font-size: 1.5rem;
+  color: gray;
+  font-weight: bold;
+}
+.btn_container {
+  display: flex;
+  flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+}
+
+.btn_1 {
+  height: 50px;
+  width: 150px;
+  border-radius: 25px; /* Make button round */
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 5px; /* Add margin between buttons */
+}
+
+.btn_1:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  transition: all 300ms ease-in-out;
+}
+
+.social_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social_ids {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons {
+  cursor: pointer;
+  height: 2rem;
+  margin-left: 20px;
+}
+
+hr {
+  border: 0;
+  background-color: rgb(205, 200, 200);
+  height: 10px;
+  margin: 35px 85px;
+}
+
+.second_section {
+  max-width: 80vw;
+  margin: auto;
+  text-align: center;
+  font-size: 1.1rem;
+  height: 90vh;
+}
+
+.box {
+  background-color: rgb(205, 200, 200);
+  width: 80vw;
+  height: 4px;
+  margin: 56px 0px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.vertical {
+  margin: 0px 100px;
+  height: 93px;
+  width: 3px;
+  background-color: rgb(205, 200, 200);
+}
+
+.img_exp {
+  width: 70px;
+  position: relative;
+  top: -36px;
+  left: -30px;
+}
+
+.oasis_logo,
+.web {
+  border-radius: 35px;
+}
+.img_dim {
+  height: 70px;
+  width: 70px;
+}
+
+.vertical_title {
+  position: relative;
+  top: 35px;
+  width: 200px;
+  margin-left: -98px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.vertical_desc {
+  position: relative;
+  top: 86px;
+  color: rgb(205, 200, 200);
+  width: 150px;
+  font-size: 9px;
+  margin-left: -68px;
+  font-weight: bold;
+  font-size: 0.5rem;
+}
+
+.second_section_part2 {
+  margin-top: 250px;
+}
+
+.box_part2 {
+  background-color: rgb(205, 200, 200);
+  width: 80vw;
+  height: 4px;
+  margin: 56px 0px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.part2_vertical {
+  margin: 0px 100px;
+  height: 93px;
+  width: 3px;
+  background-color: rgb(205, 200, 200);
+}
+
+.third_section {
+  max-width: 80vw;
+  margin: auto;
+  text-align: center;
+  font-size: 1.1rem;
+  height: 120vh;
+}
+
+.forth_section {
+  max-width: 80vw;
+  margin: auto;
+  text-align: center;
+  font-size: 1.1rem;
+  height: 130vh;
+}
+
+@media screen and (max-width: 980px) {
+  .right_section {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .btn_container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .right_section {
+    flex-direction: row;
+   
+  }
+  .btn_container {
+    flex-direction: row;
+  }
+}
+
+.head {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+form {
+  width: 90%;
+  max-width: 600px;
+}
+
+.fname {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 18px;
+  outline: 0;
+  border: 1px solid black;
+  color: black;
+  background: transparent;
+  font-size: 15px;
+}
+
+label {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  color: black;
+  cursor: text;
+  transition: 0.2s;
+
+}
+
+button {
+  padding: 10px 0;
+  color: black;
+  outline: none;
+  background: transparent;
+  border: 1px solid black;
+  width: 100%;
+  cursor: pointer;
+}
+
+input:focus ~ label {
+  top: -35px;
+  font-size: 14px;
+}
+
+
